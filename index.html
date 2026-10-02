@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUPAL DE FAMILIA</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background: #000; color: #fff; min-height: 100vh; padding: 20px; position: relative; overflow-x: hidden; }
+        .sparkle { position: fixed; width: 3px; height: 3px; background: #fff; border-radius: 50%; animation: fall linear infinite; opacity: 0.6; }
+        @keyframes fall { 0% { transform: translateY(-10px); opacity: 0; } 10% { opacity: 0.6; } 90% { opacity: 0.6; } 100% { transform: translateY(100vh); opacity: 0; } }
+        nav { text-align: center; padding: 30px 0; }
+        .logo { font-size: 48px; margin-bottom: 15px; letter-spacing: 8px; }
+        .nav-links a { color: #aaa; text-decoration: none; margin: 0 15px; font-size: 16px; letter-spacing: 2px; }
+        .nav-links a:hover { color: #fff; }
+        h1 { text-align: center; font-size: 28px; letter-spacing: 8px; margin: 20px 0 10px; font-weight: normal; }
+        .subtitle { text-align: center; color: #666; font-size: 14px; letter-spacing: 2px; margin-bottom: 40px; }
+        .members-container { max-width: 450px; margin: 0 auto; display: flex; flex-direction: column; gap: 25px; }
+        .member-card { border: 1px solid #222; border-radius: 12px; overflow: hidden; background: #0a0a0a; }
+        .member-bg { width: 100%; height: 320px; object-fit: cover; opacity: 0.8; background: #111; }
+        .member-info { text-align: center; padding: 20px; position: relative; margin-top: -50px; }
+        .member-avatar { width: 90px; height: 90px; border-radius: 50%; border: 3px solid #000; background: #222; position: relative; z-index: 2; }
+        .member-name { margin-top: 8px; font-size: 18px; letter-spacing: 1px; }
+    </style>
+</head>
+<body>
+    <script>
+        for(let i=0;i<40;i++){const s=document.createElement('div');s.className='sparkle';s.style.left=Math.random()*100+'vw';s.style.animationDuration=(Math.random()*5+5)+'s';s.style.animationDelay=(Math.random()*10)+'s';document.body.appendChild(s);}
+    </script>
+    <nav>
+        <div class="logo">$</div>
+        <div class="nav-links">
+            <a href="#about">ABOUT</a>
+            <a href="#members">MEMBERS</a>
+            <a href="#archives">ARCHIVES</a>
+        </div>
+    </nav>
+    <h1>KUPAL DE FAMILIA</h1>
+    <p class="subtitle">mga cheater sa roblox.</p>
+    <div class="members-container" id="members">
+        <div class="member-card">
+            <div class="member-bg"></div>
+            <div class="member-info">
+                <div class="member-avatar"></div>
+                <div class="member-name">Ace Pastil</div>
+            </div>
+        </div>
+        <div class="member-card">
+            <div class="member-bg"></div>
+            <div class="member-info">
+                <div class="member-avatar"></div>
+                <div class="member-name">Piolo Pastil</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
